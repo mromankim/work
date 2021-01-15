@@ -1,0 +1,588 @@
+
+html, body {
+
+  height: 100%;
+  width: 100%;
+  color: #708090;
+  font-family: "Titillium", sans-serif;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*-- Adding external font --*/
+@font-face {
+    font-family: 'audreyregular';
+    src: url('audrey-normal-webfont.woff2') format('woff2'),
+         url('audrey-normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a:link {
+  color: inherit;
+  text-decoration: none; /* no underline */
+}
+
+.navbar {
+  padding: .8rem;
+  max-height: 55px;
+  font-family:"audreyregular", sans-serif !important; /*-- !important overwrites the bootstrap code --*/
+  font-size: 90%;
+}
+
+.navbar a:hover {
+  color: white !important;
+  text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px darkgrey !important;
+}
+
+.navbar-toggle {
+  width: 100%;
+  float: none;
+  margin-right: 0;
+  padding-left: .1rem;
+}
+
+.parallax {
+  background-image: url("img/flowers.jpg");
+
+    /* Set a specific height */
+    height: 600px;
+
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    align-items: center;
+}
+
+.parallax h1 {
+  color: #F5FFFA;
+  text-align: center;
+  position: static;
+  font-size: 250%;
+  /*--- 1st horizontal, 2nd vertical, 3rd width ---*/
+  text-shadow: 1px 1px 15px #000;
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+
+.parallax img {
+  display: block;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.col-lg-3 {
+  position: relative;
+}
+
+.col-lg-3 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fade-in {
+animation: fadeIn ease 2s;
+-webkit-animation: fadeIn ease 2s;
+-moz-animation: fadeIn ease 2s;
+-o-animation: fadeIn ease 2s;
+-ms-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+.container12 {
+  position: absolute;
+  transform: translateY(-40%);
+}
+
+.half-highlight {
+  font-size: 30px;
+  background-image: linear-gradient(to right, transparent 50%, #88cc00 50%);
+  background-origin: 0;
+  background-size: 200% 50%;
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  transition: background-position 0.5s;
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000000;
+}
+
+.half-highlight:hover {
+  background-position: -100% 100%;
+}
+
+.container4 h3 {
+  color: #F5FFFA;
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 10px;
+}
+
+.container4 {
+  padding-top: 70px;
+}
+
+.container4 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container6 {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.container6 h1{
+  padding-top: 50px;
+}
+
+.container6, .container7, .col-lg-12 h1 {
+  font-size: 35px;
+  font-family: "audreyregular", sans-serif;
+}
+
+a:link .container4 h3, h1 {
+  font-family: "audreyregular", sans-serif;
+}
+
+.container3 h1 {
+  font-size: 35px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+#Skills h1{
+  font-size: 35px;
+  padding-bottom: 80px;
+}
+
+.container2 img{
+  padding-top: 50px;
+}
+
+#carousel img{
+  padding-left: 120px;
+}
+.col-lg-12 {
+  text-align: center;
+}
+
+.container5 {
+  padding-top: 20px;
+}
+
+.container5 h4 {
+  font-size: 95%;
+}
+
+.container5 h2{
+  color: inherit;
+}
+
+/*-- Text color does not change after pressing hyperlink --*/
+a:visited {
+  color: inherit;
+}
+
+.container5 a:hover{
+  color: #d5d5d5;
+}
+
+.container5 img {
+  border-radius: 8px;
+}
+
+.container2 img {
+  width: 60%;
+  height: 10%%;
+  padding-bottom: 10px;
+}
+
+.container2 h1{
+  padding-top: 50px;
+}
+.container7 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: inherit;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+}
+
+.carousel-caption h1 {
+  /*--- thickness of font ---*/
+  font-weight: 300;
+  /*--- 1st horizontal, 2nd vertical, 3rd width ---*/
+  text-shadow: 1px 1px 20px #000;
+}
+
+.carousel-caption h3 {
+  font-size: 130%;
+  text-shadow: 1px 1px 15px #000;
+  font-family: "audreyregular", sans-serif;
+}
+
+.carousel-indicators li {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  border-color: #7E7F7D;
+  border-style: solid;
+}
+
+.carousel-indicators .active {
+  background-color: #999;
+  background-color: rgba(70, 70, 70, 0.25);
+}
+
+.container9 {
+  margin-right:0;
+  background-color: #0e76a8;
+}
+.container2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#carousel-text {
+  padding-left: 50px;
+}
+
+#carousel2-text {
+  padding-left: 50px;
+}
+
+.container3 {
+  padding-top: 50px;
+}
+
+.fa-linkedin {
+  font-size: 4.5em;
+  color: #0e76a8;
+}
+
+.fa-linkedin:hover {
+  color: #d5d5d5;
+}
+
+.container1 {
+  background-color: #3f3f3f;
+      text-align: center;
+      color: #F0F8FF;
+      margin: 0px;
+      overflow: hidden;
+      padding-top: 40px;
+      padding-bottom: 40px;
+  }
+
+  .neon {
+    color:#558000;
+    text-shadow:
+      0 0 5px #558000,
+      0 0 10px #558000,
+      0 0 20px #558000,
+      0 0 40px #558000,
+      0 0 80px #558000,
+      0 0 90px #558000,
+      0 0 100px #558000,
+      0 0 150px #558000;
+  }
+
+  #text i {
+    position: relative;
+    top: 5px;
+    font-style: normal;
+    font-family: "audreyregular", sans-serif;
+    -webkit-animation: bounce 2s ease infinite alternate;
+    -moz-animation: bounce 2s ease infinite alternate;
+    animation: bounce 2s ease infinite alternate;
+    color: #F0F8FF;
+  }
+
+  #text i:nth-child(1) {
+    -moz-animation-delay: .2s;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+
+  }
+  #text i:nth-child(2) {
+    -moz-animation-delay: .4s;
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+
+  }
+  #text i:nth-child(3) {
+    -moz-animation-delay: .6s;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+
+  }
+  #text i:nth-child(4) {
+    -moz-animation-delay: .8s;
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+
+  }
+  #text i:nth-child(5) {
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+
+  }
+  }
+  #text i:nth-child(6) {
+    -moz-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+
+  }
+  #text i:nth-child(7) {
+    -moz-animation-delay: 1.4s;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+
+  }
+  #text i:nth-child(8) {
+    -moz-animation-delay: 1.6s;
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+
+  }
+  #text i:nth-child(9) {
+    -moz-animation-delay: 1.8s;
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+
+  }
+  #text i:nth-child(10) {
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+
+  }
+  #text i:nth-child(11) {
+    -moz-animation-delay: 2.2s;
+    -webkit-animation-delay: 2.2s;
+    animation-delay: 2.2s;
+
+  }
+  #text i:nth-child(12) {
+    -moz-animation-delay: 2.4s;
+    -webkit-animation-delay: 2.4s;
+    animation-delay: 2.4s;
+
+  }
+  #text i:nth-child(13) {
+    -moz-animation-delay: 2.6s;
+    -webkit-animation-delay: 2.6s;
+    animation-delay: 2.6s;
+
+  }
+  #text i:nth-child(14) {
+    -moz-animation-delay: 2.8s;
+    -webkit-animation-delay: 2.8s;
+    animation-delay: 2.8s;
+
+  }
+  #text i:nth-child(15) {
+    -moz-animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+
+  }
+
+  @keyframes bounce { 100% { top: -10px; } }
+  @-webkit-keyframes bounce { 100% { top: -10px; } }
+  @-moz-keyframes bounce { 100% { top: -10px; } }
+
+
+
+.container3 {
+text-align: center;
+padding-bottom: 50px;
+}
+
+.container3 h2 {
+  padding-bottom: 40px;
+}
+
+.fa-database {
+  color: #5C71FE;
+  }
+
+.fa-python {
+  color: #306998;
+}
+
+.fa-database, .fa-python {
+  font-size: 4em;
+  margin: 1rem;
+}
+
+footer {
+  height: 60px;
+  background-color: #3f3f3f;
+  color: #F0F8FF;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 70%;
+}
+
+
+
+@media (max-width: 992px)  {
+
+.parallax h3 {
+    text-align: center;
+    font-size: 110%;
+    padding-top: 0px;
+}
+
+.parallax h1 {
+    text-align: center;
+    font-size: 150%;
+}
+
+.parallax img {
+    width: 30%;
+    height: auto;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.fa-linkedin {
+  font-size: 4em;
+  }
+}
+
+@media (max-width: 768px)  {
+
+  .parallax h3 {
+    text-align: center;
+    font-size: 110%;
+  }
+
+  .parallax h1 {
+    text-align: center;
+    font-size: 150%;
+}
+
+  .parallax img {
+    width: 40%;
+    height: 100%;
+  }
+
+
+  .carousel-caption {
+    top: 45%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 350%;
+    padding-bottom: .2rem;
+  }
+
+
+  .container1 h2{
+    font-size: 160%
+    font-family: "audreyregular", sans-serif;
+  }
+
+  .fa-linkedin {
+    font-size: 3em;
+    }
+}
+
+@media (max-width: 576px)  {
+
+  .parallax h3 {
+    text-align: center;
+    font-size: 110%;
+  }
+
+  .parallax h1 {
+    text-align: center;
+    font-size: 150%;
+    height: auto;
+  }
+  .parallax img {
+    width: 50%;
+    height: 100%;
+  }
+
+  .carousel-caption {
+    top: 40%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 250%;
+    padding-bottom: .2rem;
+  }
+
+  .carousel-caption ul {
+  margin-right: 0
+  }
+
+  .container1 h2{
+    font-size: 140%
+  }
+
+  .fa-linkedin {
+    font-size: 2.5em;
+    }
+
+  .container5 img{
+    text-align: center;
+    height: auto;
+  }
+
+}
